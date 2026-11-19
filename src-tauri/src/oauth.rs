@@ -10,6 +10,7 @@ use crate::error::{AppError, Result};
 /// Read-only calendar, identity, the Workspace directory (guests' photos), Gmail (count, important, mark read),
 /// Google Tasks, Drive file metadata and the address book (read-only); file contents stay inaccessible.
 pub const SCOPE: &str = "https://www.googleapis.com/auth/calendar.events.readonly \
+https://www.googleapis.com/auth/calendar.calendarlist.readonly \
 https://www.googleapis.com/auth/directory.readonly https://www.googleapis.com/auth/gmail.modify \
 https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/drive.metadata.readonly \
 https://www.googleapis.com/auth/contacts.readonly openid email profile";
